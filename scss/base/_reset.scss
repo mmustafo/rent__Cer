@@ -1,0 +1,54 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+$primary-color: #299764; // Green (buttons, highlights)
+$secondary-color: #ffffff; // White (text on dark backgrounds)
+$background-color: #121212; // Dark background
+$card-background-color: #272727; // Card background
+$text-color: #dfe6e9; // Light text color
+$muted-text-color: #636e72; // Muted text (secondary text)
+$border-color: #2d2d2d; // Border for cards and sections
+$hover-color: #019a76; // Button hover effect
+$link-color: #74b9ff; // Link color (footer or elsewhere)
+$footer-background: #181818; // Footer background
+$fontfamily:'Montserrat';
+
+body {
+    font-family: $fontfamily;
+}
+@mixin FontSetting ($fs, $fw, $lh){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+
+}
+
+
+h1{
+        @include FontSetting (3.6rem, 600, 1.2);
+}
+
+h2{
+    @include FontSetting (3.6rem, 600, 1.2)
+}
+
+h3{
+    @include FontSetting (3.2rem, 500, 1.2)
+
+}
+
+h4{
+    @include FontSetting (1.6rem, 600, 1.2)
+
+}
+
+p{
+    @include FontSetting (1.6rem, 400, 1.2)  
+}
+
+a{
+    @include FontSetting (1.8rem, 500, 1.2)  
+}
+

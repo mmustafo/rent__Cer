@@ -1,0 +1,80 @@
+// main start
+.main
+ {.compact {
+     background-image: url(../images/Rectangle\ 671.png);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     width: 1200px;
+     height: 500px;
+     border-radius: 20px;
+     .compact__text {
+          text-align: center;
+          .compact__text__h2 {
+               color: $secondary-color;
+               padding-top: 6rem;
+               
+          }
+          .compact__text__p {
+               width: 416px;
+               color: $secondary-color;
+               margin: 0 auto;
+
+          }
+     }
+     .compact__footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 27rem;
+     }
+     .compact__footer__img{
+          margin-left: 4rem;
+     }
+     .compact__footer__arrov {
+          margin-right: 4rem;
+          display: flex;
+          align-items: center;
+          gap: 1.2rem;
+     }
+}
+}
+
+.compact__input {
+     padding: 2rem 31rem 2rem 3rem;
+     border-radius: 28px;
+     margin-left: 20rem;
+     margin-top: -2.5rem;
+     border: none;
+}
+
+// compact end
+
+// rent cars srtart
+
+// .rent__car {
+// }
+// .rent__car__text {
+// }
+
+// .rent__car__btn {
+// }
+// .rent__car__btn__link {
+// }
+// .rent__car__cards {
+// }
+// .rent__cards {
+// }
+// .rent__card {
+// }
+// .rent__car__h4 {
+// }
+// rent car end.rent__card__p {
+// }
+// .rent__card__img {
+// }
+// .rent__card__footer__p {
+// }
+// .rend__cards__2 {
+// }
+
+// 

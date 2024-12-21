@@ -1,0 +1,462 @@
+html {
+     font-size: 62.5%;
+     scroll-behavior: smooth;
+   }
+
+@import "./vendors/normolise";
+
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+
+@import "./base/typography";
+@import "./base/reset";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import url("./layout/_main.scss");
+
+@import "./components/buttons";
+
+@import "./pages/home";
+@import "./pages/contact";
+
+.container{
+     width: 100%;
+     max-width: 1260px;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 30px;
+     padding-right: 30px;
+}
+
+body{
+     background-color: $background-color;
+}
+
+// main start
+.main
+ {.compact
+
+      {
+     background-image: url(../images/Rectangle\ 671.png);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     width: 1200px;
+     height: 500px;
+     border-radius: 20px;
+     .compact__text {
+          text-align: center;
+          .compact__text__h2 {
+               color: $secondary-color;
+               padding-top: 6rem;
+               
+          }
+          .compact__text__p {
+               width: 416px;
+               color: $secondary-color;
+               margin: 0 auto;
+
+          }
+     }
+     .compact__footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 27rem;
+     }
+     .compact__footer__img{
+          margin-left: 4rem;
+     }
+     .compact__footer__arrov {
+          margin-right: 4rem;
+          display: flex;
+          align-items: center;
+          gap: 1.2rem;
+     }
+}
+}
+
+.compact__input {
+     padding: 2rem 31rem 2rem 3rem;
+     border-radius: 28px;
+     margin-left: 20rem;
+     margin-top: -2.5rem;
+     border: none;
+}
+
+// rent cars srtart
+
+.rent__car {
+     .rent__car__cards {
+          .rent__cards {
+               justify-content: center;
+               display: flex;
+               align-items: center;
+               gap: 3rem;
+               .rent__card {
+                    background-color: $card-background-color;
+                    border-radius: 28px;
+                    .rent__car__h4 {
+                         color: $secondary-color;
+                         margin-bottom: 1rem;
+                         margin-left: 2rem;
+                    }
+                    .rent__card__p {
+                         color: $secondary-color;
+                         font-weight: 500;
+                         margin-left: 2rem;
+                    }
+                    .rent__card__footer__p {
+                         justify-content: center;
+                         display: flex;
+                         align-items: center;
+                         gap: 5.4rem;
+                         .rent__card__footer__pp{
+                              display: flex;
+                              gap: 1.2rem;
+                              color: $secondary-color;
+                         }
+                    }
+               }
+          }
+     }
+     .rent__car__text {
+          .rent__car__text__h2{
+               color: $secondary-color;
+               text-align: center;
+          }
+          .rent__car__text__p{
+               color: $secondary-color;
+               width: 575px;
+               text-align: center;
+               margin: 0 auto;
+          }
+
+          .rent__car__btn {
+               justify-content: center;
+               margin-top: 4rem;
+               margin-bottom: 3rem;
+               display: flex;
+               gap: 2rem;
+               .rent__car__btn__link {
+                    color: $secondary-color;
+                    padding: 19px 40px;
+                    border: 2px solid #333333;
+                    border-radius: 28px;
+                    text-decoration: none;
+               }
+               .greanbc__color{
+                    background-color: $primary-color;
+               }
+
+          }
+}
+.rend__cards__2 {
+     justify-content: center;
+     display: flex;
+     gap: 3rem;
+     align-items: center;
+     margin-top: 2rem;
+     .rent__card {
+          background-color: $card-background-color;
+          border-radius: 28px;
+
+     }
+     .rent__car__h4 {
+          color: $secondary-color;
+          margin-bottom: 1rem;
+          margin-left: 2rem;
+     }
+     .rent__card__p {
+          color: $secondary-color;
+          font-weight: 500;
+          margin-left: 2rem;
+     }
+     
+     .rent__card__footer__p {
+          justify-content: center;
+          display: flex;
+          align-items: center;
+          gap: 5.4rem;
+     }
+     .rent__card__footer__pp {
+          display: flex;
+          gap: 1.2rem;
+          color: $secondary-color;
+     }
+}
+.rent__car__footer__btn {
+     display: flex;
+     justify-content: center;
+     margin-top: 5.8rem;
+     margin-bottom: 16rem;
+.rent__car__footer__link {
+     background-color: $primary-color;
+     color: $secondary-color;
+     padding: 19px 40px;
+     border: 2px solid #333333;
+     border-radius: 28px;
+     text-decoration: none;
+
+}
+}
+}
+
+
+// rent car end
+
+// community start
+
+.community {
+     background-color:$card-background-color ;
+     .community__content {
+          padding-top: 10rem;
+          padding-bottom: 10rem;
+          display: flex;
+          align-items: center;
+          .community__left {
+               background-color: $background-color;
+               padding: 7rem;
+               border-radius: 2.8rem;
+               width: 470px;
+               height: 479px;
+               .community__left__p {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    color: $link-color;
+                    margin-bottom: 3rem;
+               }
+               .community__left__h2 {
+                    margin-top: 16px;
+                    width: 320px;
+                    color: $secondary-color;
+               }
+               .community__left__Img {
+               }
+               .community__left__bb__pp {
+                    color: $secondary-color;
+                    margin-top: 3rem;
+                    margin-bottom: 3.8rem;
+               }
+               .community__btn__link {
+                    background-color: $secondary-color;
+                    padding: 1.8rem 5rem;
+                    border-radius: 2.8rem;
+                    text-decoration: none;
+                    border:  2px solid  radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+                    background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+                    color: $border-color;
+
+
+               }
+          }
+          .community__right {
+               background-color: $primary-color;
+               padding: 5rem 0 5rem 5rem ;
+               height: 500px;
+               border-radius: 28px;
+          .community__rigt__img__chat {
+               height: 450px;
+          }
+          .comunity__footer__img {
+               display: flex;
+               align-items: center;
+               gap: 2rem;
+          }
+          .comunity__footer__img__hr {
+          }
+          .community__footer__arrow {
+               display: flex;
+               align-items: center;
+               gap: 1.6rem;
+
+          }
+          .community__footer__arrow__left {
+          
+}
+          }
+     }
+}
+
+// cars
+.cars {
+     .cars__content {
+          margin-top: 16rem;
+          
+          .cars__content__imgs {
+               margin-bottom: 16rem;
+               display: flex;
+               align-items: center;
+               gap: 7rem;
+               .cars__content__img {
+               }
+          }
+          .cars__content__h4 {
+               margin-left: 8.5rem;
+               margin-bottom: 3.4rem;
+               display: flex;
+               justify-content: start;
+               color: $secondary-color;
+          }
+     }
+}
+
+// service start
+
+.service {
+     .service__content {
+          .service__content__h2 {
+               color: $secondary-color;
+               text-align: center;
+          }
+          .service__content__p {
+               width: 648px;
+               color: $secondary-color;
+               text-align: center;
+               margin: 0 auto;
+               margin-bottom: 4rem;
+          }
+          .service__cards {
+               margin-bottom: 2rem;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               gap: 2rem;
+               .service__card {
+                    background-color: $card-background-color ;
+                    padding: 3.2rem 4rem;
+                    border-radius: 2.8rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 7rem;
+                    .service__card__img {
+                    }
+                    .service__card__text {
+                         .service__card__h3 {
+                              color: $secondary-color;
+                              width: 278px;
+                         }
+                         .service__card__p {
+                              color: $secondary-color;
+                              width: 354px;
+                         }
+                    }
+               }
+          }
+          .service__cards2 {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               gap: 2rem;
+               margin-bottom: 16rem;
+               .service__card {
+                    background-color: $card-background-color ;
+                    padding: 3.2rem 4rem;
+                    border-radius: 2.8rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 7rem;
+                    .service__card__img {
+                    }
+                    .service__card__text {
+                         .service__card__h3 {
+                              color: $secondary-color;
+                              width: 278px;
+                         }
+                         .service__card__p {
+                              color: $secondary-color;
+                              width: 354px;
+                         }
+                    }
+               }
+          }
+     }
+}
+// t_koruv
+
+.t_koruv {
+     .t_koruv__content {
+          border: 2px solid $border-color;
+          border-radius: 2.8rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .t_koruv__text {
+               .t_koruv__text__h2{
+                    margin-left: 3.2rem;
+                    color: $secondary-color;
+                    margin-bottom: 1rem;
+               }
+               .t_koruv__text__p{
+                    margin-left: 3.2rem;
+                    color: $secondary-color;
+                    width: 590px;
+               }
+
+               .t_koruv__cards {
+                    margin-left: 3.2rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    .t_koruv__card {
+                         border-radius: 2.8rem;
+                         height: 160px;
+                         background-color: $card-background-color;
+                         .t_koruv__card__img{
+                              padding-top: 3rem;
+                              padding-left: 12rem;
+                              margin-bottom: 2rem;
+                              margin-left: 18px;
+                         }
+                         .t_koruv__card__p {
+                              color: $secondary-color;
+                              width: 170px;
+                              margin-left: 18px;
+                              margin-bottom: 1.6rem;
+                         }
+                    }
+               }
+          }
+          .t_koruv__img {
+               margin-right: 7rem;
+          }
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

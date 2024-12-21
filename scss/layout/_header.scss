@@ -1,0 +1,80 @@
+
+.header {
+     .nav {
+          margin-top: 2rem;
+          .nav_content {
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+
+               .nav_right {
+                    .nav__right__title {
+                         display: flex;
+                         align-items: center;
+                         gap: 3rem;
+                    }
+                    .nav__right__ul {
+                         display: flex;
+                         align-items: center;
+                    }
+                    .nav__right__link {
+                         color:  $secondary-color;
+                         text-decoration: none;
+                         font-size: 18px;
+                         font-weight: 600;
+                         line-height: 21.94px;
+                         text-align: left;
+                         text-underline-position: from-font;
+                         text-decoration-skip-ink: none;
+
+                    }
+                    .nav__right__btn {
+                         text-decoration: none;
+                         display: flex;
+                         color: $secondary-color;
+                         align-items: center;
+                         gap: 0.8rem;
+                         background-color: $primary-color;
+                         padding: 18px 30px;
+                         border-radius: 2.8rem;
+                         font-size: 18px;
+                         font-weight: 500;
+                          line-height: 21.94px;
+                          text-align: left;
+                          text-underline-position: from-font;
+                          text-decoration-skip-ink: none;
+
+                    }
+               }
+               .nav_left {
+                    display: flex;
+                    align-items: center;
+                    .nav_ul {
+                         display: flex;
+                         align-items: center; 
+                         gap: 3rem;  
+
+               }
+               .nav_item {
+                    list-style: none;
+               }
+               .nav__link {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8rem;
+                    text-decoration: none;
+                    color: $secondary-color;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 21.94px;
+                    text-align: center;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+               }
+               }
+          }
+}
+}
+
+// nav end

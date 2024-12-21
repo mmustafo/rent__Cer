@@ -1,0 +1,490 @@
+@import url("./layout/_main.scss");
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v29-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v29-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v29-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.header .nav {
+  margin-top: 2rem;
+}
+.header .nav .nav_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .nav .nav_content .nav_right .nav__right__title {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.header .nav .nav_content .nav_right .nav__right__ul {
+  display: flex;
+  align-items: center;
+}
+.header .nav .nav_content .nav_right .nav__right__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.header .nav .nav_content .nav_right .nav__right__btn {
+  text-decoration: none;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: #299764;
+  padding: 18px 30px;
+  border-radius: 2.8rem;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.94px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.header .nav .nav_content .nav_left {
+  display: flex;
+  align-items: center;
+}
+.header .nav .nav_content .nav_left .nav_ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.header .nav .nav_content .nav_left .nav_item {
+  list-style: none;
+}
+.header .nav .nav_content .nav_left .nav__link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.94px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+body {
+  background-color: #121212;
+}
+
+.main .compact {
+  background-image: url(../images/Rectangle\ 671.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1200px;
+  height: 500px;
+  border-radius: 20px;
+}
+.main .compact .compact__text {
+  text-align: center;
+}
+.main .compact .compact__text .compact__text__h2 {
+  color: #ffffff;
+  padding-top: 6rem;
+}
+.main .compact .compact__text .compact__text__p {
+  width: 416px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+.main .compact .compact__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 27rem;
+}
+.main .compact .compact__footer__img {
+  margin-left: 4rem;
+}
+.main .compact .compact__footer__arrov {
+  margin-right: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.compact__input {
+  padding: 2rem 31rem 2rem 3rem;
+  border-radius: 28px;
+  margin-left: 20rem;
+  margin-top: -2.5rem;
+  border: none;
+}
+
+.rent__car .rent__car__cards .rent__cards {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.rent__car .rent__car__cards .rent__cards .rent__card {
+  background-color: #272727;
+  border-radius: 28px;
+}
+.rent__car .rent__car__cards .rent__cards .rent__card .rent__car__h4 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+.rent__car .rent__car__cards .rent__cards .rent__card .rent__card__p {
+  color: #ffffff;
+  font-weight: 500;
+  margin-left: 2rem;
+}
+.rent__car .rent__car__cards .rent__cards .rent__card .rent__card__footer__p {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 5.4rem;
+}
+.rent__car .rent__car__cards .rent__cards .rent__card .rent__card__footer__p .rent__card__footer__pp {
+  display: flex;
+  gap: 1.2rem;
+  color: #ffffff;
+}
+.rent__car .rent__car__text .rent__car__text__h2 {
+  color: #ffffff;
+  text-align: center;
+}
+.rent__car .rent__car__text .rent__car__text__p {
+  color: #ffffff;
+  width: 575px;
+  text-align: center;
+  margin: 0 auto;
+}
+.rent__car .rent__car__text .rent__car__btn {
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+.rent__car .rent__car__text .rent__car__btn .rent__car__btn__link {
+  color: #ffffff;
+  padding: 19px 40px;
+  border: 2px solid #333333;
+  border-radius: 28px;
+  text-decoration: none;
+}
+.rent__car .rent__car__text .rent__car__btn .greanbc__color {
+  background-color: #299764;
+}
+.rent__car .rend__cards__2 {
+  justify-content: center;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+.rent__car .rend__cards__2 .rent__card {
+  background-color: #272727;
+  border-radius: 28px;
+}
+.rent__car .rend__cards__2 .rent__car__h4 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+.rent__car .rend__cards__2 .rent__card__p {
+  color: #ffffff;
+  font-weight: 500;
+  margin-left: 2rem;
+}
+.rent__car .rend__cards__2 .rent__card__footer__p {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 5.4rem;
+}
+.rent__car .rend__cards__2 .rent__card__footer__pp {
+  display: flex;
+  gap: 1.2rem;
+  color: #ffffff;
+}
+.rent__car .rent__car__footer__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5.8rem;
+  margin-bottom: 16rem;
+}
+.rent__car .rent__car__footer__btn .rent__car__footer__link {
+  background-color: #299764;
+  color: #ffffff;
+  padding: 19px 40px;
+  border: 2px solid #333333;
+  border-radius: 28px;
+  text-decoration: none;
+}
+
+.community {
+  background-color: #272727;
+}
+.community .community__content {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  align-items: center;
+}
+.community .community__content .community__left {
+  background-color: #121212;
+  padding: 7rem;
+  border-radius: 2.8rem;
+  width: 470px;
+  height: 479px;
+}
+.community .community__content .community__left .community__left__p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #74b9ff;
+  margin-bottom: 3rem;
+}
+.community .community__content .community__left .community__left__h2 {
+  margin-top: 16px;
+  width: 320px;
+  color: #ffffff;
+}
+.community .community__content .community__left .community__left__bb__pp {
+  color: #ffffff;
+  margin-top: 3rem;
+  margin-bottom: 3.8rem;
+}
+.community .community__content .community__left .community__btn__link {
+  background-color: #ffffff;
+  padding: 1.8rem 5rem;
+  border-radius: 2.8rem;
+  text-decoration: none;
+  border: 2px solid radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+  background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+  color: #2d2d2d;
+}
+.community .community__content .community__right {
+  background-color: #299764;
+  padding: 5rem 0 5rem 5rem;
+  height: 500px;
+  border-radius: 28px;
+}
+.community .community__content .community__right .community__rigt__img__chat {
+  height: 450px;
+}
+.community .community__content .community__right .comunity__footer__img {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.community .community__content .community__right .community__footer__arrow {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.cars .cars__content {
+  margin-top: 16rem;
+}
+.cars .cars__content .cars__content__imgs {
+  margin-bottom: 16rem;
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+.cars .cars__content .cars__content__h4 {
+  margin-left: 8.5rem;
+  margin-bottom: 3.4rem;
+  display: flex;
+  justify-content: start;
+  color: #ffffff;
+}
+
+.service .service__content .service__content__h2 {
+  color: #ffffff;
+  text-align: center;
+}
+.service .service__content .service__content__p {
+  width: 648px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+.service .service__content .service__cards {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.service .service__content .service__cards .service__card {
+  background-color: #272727;
+  padding: 3.2rem 4rem;
+  border-radius: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7rem;
+}
+.service .service__content .service__cards .service__card .service__card__text .service__card__h3 {
+  color: #ffffff;
+  width: 278px;
+}
+.service .service__content .service__cards .service__card .service__card__text .service__card__p {
+  color: #ffffff;
+  width: 354px;
+}
+.service .service__content .service__cards2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 16rem;
+}
+.service .service__content .service__cards2 .service__card {
+  background-color: #272727;
+  padding: 3.2rem 4rem;
+  border-radius: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7rem;
+}
+.service .service__content .service__cards2 .service__card .service__card__text .service__card__h3 {
+  color: #ffffff;
+  width: 278px;
+}
+.service .service__content .service__cards2 .service__card .service__card__text .service__card__p {
+  color: #ffffff;
+  width: 354px;
+}
+
+.t_koruv .t_koruv__content {
+  border: 2px solid #2d2d2d;
+  border-radius: 2.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.t_koruv .t_koruv__content .t_koruv__text .t_koruv__text__h2 {
+  margin-left: 3.2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.t_koruv .t_koruv__content .t_koruv__text .t_koruv__text__p {
+  margin-left: 3.2rem;
+  color: #ffffff;
+  width: 590px;
+}
+.t_koruv .t_koruv__content .t_koruv__text .t_koruv__cards {
+  margin-left: 3.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.t_koruv .t_koruv__content .t_koruv__text .t_koruv__cards .t_koruv__card {
+  border-radius: 2.8rem;
+  height: 160px;
+  background-color: #272727;
+}
+.t_koruv .t_koruv__content .t_koruv__text .t_koruv__cards .t_koruv__card .t_koruv__card__img {
+  padding-top: 3rem;
+  padding-left: 12rem;
+  margin-bottom: 2rem;
+  margin-left: 18px;
+}
+.t_koruv .t_koruv__content .t_koruv__text .t_koruv__cards .t_koruv__card .t_koruv__card__p {
+  color: #ffffff;
+  width: 170px;
+  margin-left: 18px;
+  margin-bottom: 1.6rem;
+}
+.t_koruv .t_koruv__content .t_koruv__img {
+  margin-right: 7rem;
+}/*# sourceMappingURL=style.css.map */
