@@ -31,7 +31,7 @@ html {
 }
 
 body{
-     background-color: $background-color;
+     background-color: var(--background-color);
 }
 
 // main start
@@ -48,13 +48,13 @@ body{
      .compact__text {
           text-align: center;
           .compact__text__h2 {
-               color: $secondary-color;
+               color: #fff;
                padding-top: 6rem;
                
           }
           .compact__text__p {
                width: 416px;
-               color: $secondary-color;
+               color: #fff;
                margin: 0 auto;
 
           }
@@ -95,15 +95,15 @@ body{
                align-items: center;
                gap: 3rem;
                .rent__card {
-                    background-color: $card-background-color;
+                    background-color: var(--dark-card-background-color);
                     border-radius: 28px;
                     .rent__car__h4 {
-                         color: $secondary-color;
+                         color: var(--secondary-color);
                          margin-bottom: 1rem;
                          margin-left: 2rem;
                     }
                     .rent__card__p {
-                         color: $secondary-color;
+                         color: var(--secondary-color);
                          font-weight: 500;
                          margin-left: 2rem;
                     }
@@ -115,7 +115,7 @@ body{
                          .rent__card__footer__pp{
                               display: flex;
                               gap: 1.2rem;
-                              color: $secondary-color;
+                              color: var(--secondary-color);
                          }
                     }
                }
@@ -123,11 +123,11 @@ body{
      }
      .rent__car__text {
           .rent__car__text__h2{
-               color: $secondary-color;
+               color: var(--secondary-color);
                text-align: center;
           }
           .rent__car__text__p{
-               color: $secondary-color;
+               color: var(--secondary-color);
                width: 575px;
                text-align: center;
                margin: 0 auto;
@@ -140,36 +140,39 @@ body{
                display: flex;
                gap: 2rem;
                .rent__car__btn__link {
-                    color: $secondary-color;
+                    color: var(--secondary-color);
                     padding: 19px 40px;
-                    border: 2px solid #333333;
+                    border: 2px solid var(--border-color);
                     border-radius: 28px;
                     text-decoration: none;
                }
                .greanbc__color{
-                    background-color: $primary-color;
+                    background-color: var(--primary-color);
                }
 
           }
 }
-.rend__cards__2 {
+
+
+.rend__cards{
      justify-content: center;
      display: flex;
      gap: 3rem;
      align-items: center;
      margin-top: 2rem;
+    
      .rent__card {
-          background-color: $card-background-color;
+          background-color: var(--card-background-color);
           border-radius: 28px;
 
      }
      .rent__car__h4 {
-          color: $secondary-color;
+          color: var(--secondary-color);
           margin-bottom: 1rem;
           margin-left: 2rem;
      }
      .rent__card__p {
-          color: $secondary-color;
+          color: var(--secondary-color);
           font-weight: 500;
           margin-left: 2rem;
      }
@@ -183,7 +186,7 @@ body{
      .rent__card__footer__pp {
           display: flex;
           gap: 1.2rem;
-          color: $secondary-color;
+          color: var(--secondary-color);
      }
 }
 .rent__car__footer__btn {
@@ -193,9 +196,9 @@ body{
      margin-bottom: 16rem;
 .rent__car__footer__link {
      background-color: $primary-color;
-     color: $secondary-color;
+     color: var(--secondary-color);
      padding: 19px 40px;
-     border: 2px solid #333333;
+     border: 2px solid var(--border-color);
      border-radius: 28px;
      text-decoration: none;
 
@@ -209,14 +212,14 @@ body{
 // community start
 
 .community {
-     background-color:$card-background-color ;
+     background-color: var(--card-background-color);
      .community__content {
           padding-top: 10rem;
           padding-bottom: 10rem;
           display: flex;
           align-items: center;
           .community__left {
-               background-color: $background-color;
+               background-color: var(--background-color);
                padding: 7rem;
                border-radius: 2.8rem;
                width: 470px;
@@ -231,17 +234,17 @@ body{
                .community__left__h2 {
                     margin-top: 16px;
                     width: 320px;
-                    color: $secondary-color;
+                    color: var(--secondary-color);
                }
                .community__left__Img {
                }
                .community__left__bb__pp {
-                    color: $secondary-color;
+                    color: var(--secondary-color);
                     margin-top: 3rem;
                     margin-bottom: 3.8rem;
                }
                .community__btn__link {
-                    background-color: $secondary-color;
+                    background-color: var(--secondary-color);
                     padding: 1.8rem 5rem;
                     border-radius: 2.8rem;
                     text-decoration: none;
@@ -253,7 +256,7 @@ body{
                }
           }
           .community__right {
-               background-color: $primary-color;
+               background-color: var(--primary-color);
                padding: 5rem 0 5rem 5rem ;
                height: 500px;
                border-radius: 28px;
@@ -290,15 +293,14 @@ body{
                display: flex;
                align-items: center;
                gap: 7rem;
-               .cars__content__img {
-               }
+               
           }
           .cars__content__h4 {
                margin-left: 8.5rem;
                margin-bottom: 3.4rem;
                display: flex;
                justify-content: start;
-               color: $secondary-color;
+               color: var(--secondary-color);
           }
      }
 }
@@ -308,12 +310,12 @@ body{
 .service {
      .service__content {
           .service__content__h2 {
-               color: $secondary-color;
+               color: var(--secondary-color);
                text-align: center;
           }
           .service__content__p {
                width: 648px;
-               color: $secondary-color;
+               color: var(--secondary-color);
                text-align: center;
                margin: 0 auto;
                margin-bottom: 4rem;
@@ -325,7 +327,7 @@ body{
                justify-content: center;
                gap: 2rem;
                .service__card {
-                    background-color: $card-background-color ;
+                    background-color: var(--card-background-color) ;
                     padding: 3.2rem 4rem;
                     border-radius: 2.8rem;
                     display: flex;
@@ -336,11 +338,11 @@ body{
                     }
                     .service__card__text {
                          .service__card__h3 {
-                              color: $secondary-color;
+                              color: var(--secondary-color);
                               width: 278px;
                          }
                          .service__card__p {
-                              color: $secondary-color;
+                              color: var(--secondary-color);
                               width: 354px;
                          }
                     }
@@ -353,7 +355,7 @@ body{
                gap: 2rem;
                margin-bottom: 16rem;
                .service__card {
-                    background-color: $card-background-color ;
+                    background-color: var(--card-background-color) ;
                     padding: 3.2rem 4rem;
                     border-radius: 2.8rem;
                     display: flex;
@@ -364,11 +366,11 @@ body{
                     }
                     .service__card__text {
                          .service__card__h3 {
-                              color: $secondary-color;
+                              color: var(--secondary-color);
                               width: 278px;
                          }
                          .service__card__p {
-                              color: $secondary-color;
+                              color: var(--secondary-color);
                               width: 354px;
                          }
                     }
@@ -380,7 +382,7 @@ body{
 
 .t_koruv {
      .t_koruv__content {
-          border: 2px solid $border-color;
+          border: 2px solid var(--border-color);
           border-radius: 2.8rem;
           display: flex;
           justify-content: space-between;
@@ -388,12 +390,12 @@ body{
           .t_koruv__text {
                .t_koruv__text__h2{
                     margin-left: 3.2rem;
-                    color: $secondary-color;
+                    color: var(--secondary-color);
                     margin-bottom: 1rem;
                }
                .t_koruv__text__p{
                     margin-left: 3.2rem;
-                    color: $secondary-color;
+                    color: var(--secondary-color);
                     width: 590px;
                }
 
@@ -405,7 +407,7 @@ body{
                     .t_koruv__card {
                          border-radius: 2.8rem;
                          height: 160px;
-                         background-color: $card-background-color;
+                         background-color: var(--card-background-color);
                          .t_koruv__card__img{
                               padding-top: 3rem;
                               padding-left: 12rem;
@@ -413,7 +415,7 @@ body{
                               margin-left: 18px;
                          }
                          .t_koruv__card__p {
-                              color: $secondary-color;
+                              color: var(--secondary-color);
                               width: 170px;
                               margin-left: 18px;
                               margin-bottom: 1.6rem;
@@ -427,6 +429,13 @@ body{
      }
 }
 
+
+.footer {
+}
+.footer__container {
+     display: flex;
+
+}
 
 
 

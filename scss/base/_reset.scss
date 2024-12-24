@@ -2,27 +2,89 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+// Variables for dark mode
+$dark-primary-color: #00b894; // Green (buttons, highlights)
+$dark-secondary-color: #ffffff; // White (text on dark backgrounds)
+$dark-background-color: #121212; // Dark background
+$dark-card-background-color: #1e1e1e; // Card background
+$dark-text-color: #dfe6e9; // Light text color
+$dark-muted-text-color: #636e72; // Muted text (secondary text)
+$dark-border-color: #2d2d2d; // Border for cards and sections
+$dark-hover-color: #019a76; // Button hover effect
+$dark-link-color: #74b9ff; // Link color
+$dark-footer-background: #181818; // Footer background
 
-$primary-color: #299764; // Green (buttons, highlights)
-$secondary-color: #ffffff; // White (text on dark backgrounds)
-$background-color: #121212; // Dark background
-$card-background-color: #272727; // Card background
-$text-color: #dfe6e9; // Light text color
-$muted-text-color: #636e72; // Muted text (secondary text)
-$border-color: #2d2d2d; // Border for cards and sections
-$hover-color: #019a76; // Button hover effect
-$link-color: #74b9ff; // Link color (footer or elsewhere)
-$footer-background: #181818; // Footer background
+// Variables for light mode
+$light-primary-color: #00b894; // Green (buttons, highlights)
+$light-secondary-color: #000000; // Black (text on light backgrounds)
+$light-background-color: #ffffff; // White background
+$light-card-background-color: #F5F5F5; // Card background
+$light-text-color: #2d3436; // Dark text color
+$light-muted-text-color: #636e72; // Muted text (secondary text)
+$light-border-color: #e0e0e0; // Border for cards and sections
+$light-hover-color: #019a76; // Button hover effect
+$light-link-color: #0984e3; // Link color
+$light-footer-background: #f1f1f1; // Footer background
+$main-ff: "Montserrat", sans-serif;
+$secondary-color: #ffffff;
 $fontfamily:'Montserrat';
+$header-border-color: #333333;
+$input-text-color: #555555;
+$primary-color: #00b894;
+$background-color:#1C1C1C;
+$card-background-color:#272727;
+$link-color:#FFFFFF;
+$border-color:#1C1C1C;
+$dark-secondary-color:#FFFFFF;
 
+// Variables for dark mode
+$dark-primary-color: #00b894; // Green (buttons, highlights)
+$dark-secondary-color: #ffffff; // White (text on dark backgrounds)
+$dark-background-color: #121212; // Dark background
+$dark-card-background-color: #1e1e1e; // Card background
+$dark-text-color: #dfe6e9; // Light text color
+$dark-muted-text-color: #636e72; // Muted text (secondary text)
+$dark-border-color: #2d2d2d; // Border for cards and sections
+$dark-hover-color: #019a76; // Button hover effect
+$dark-link-color: #74b9ff; // Link color
+$dark-footer-background: #181818; // Footer background
+
+// Variables for light mode
+$light-primary-color: #00b894; // Green (buttons, highlights)
+$light-secondary-color: #000000; // Black (text on light backgrounds)
+$light-background-color: #ffffff; // White background
+$light-card-background-color: #f9f9f9; // Card background
+$light-text-color: #2d3436; // Dark text color
+$light-muted-text-color: #636e72; // Muted text (secondary text)
+$light-border-color: #e0e0e0; // Border for cards and sections
+$light-hover-color: #019a76; // Button hover effect
+$light-link-color: #0984e3; // Link color
+$light-footer-background: #f1f1f1; // Footer background
+$main-ff: "Montserrat", sans-serif;
+
+:root{
+    @include theme(dark);
+  }
 body {
-    font-family: $fontfamily;
+    font-family: $main-ff;
+    background-color: var(--background-color);
 }
+
+body.light-mode {
+    @include theme(light);
+}
+
+
+
 @mixin FontSetting ($fs, $fw, $lh){
     font-size: $fs;
     font-weight: $fw;
     line-height: $lh;
 
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -51,4 +113,23 @@ p{
 a{
     @include FontSetting (1.8rem, 500, 1.2)  
 }
+
+@mixin boxDisplayFlex ($df, $ai, $jc) {
+    display: $df;
+    align-items: $ai;
+    justify-content: $jc;
+     
+ }
+
+ @mixin boxDisplayFlexspaceB ($df, $ai) {
+    display: $df;
+    align-items: $ai;
+     
+ }
+ 
+ @mixin fontStyle ($fs, $fw, $lh) {
+   font-size: $fs;
+   font-weight: $fw;
+   line-height: $lh;
+ }
 
